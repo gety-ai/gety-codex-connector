@@ -1,15 +1,34 @@
 {
-	"id": "sample_dummy",
-	"name": "Gety Sample Connector",
+	"id": "codex_sessions",
+	"name": "Codex",
 	"version": "0.1.0",
 	"min_app_version": "0.5.1",
 	"entry": "dist/main.js",
-	"description": "A minimal runnable sample connector that indexes a small Gety introduction.",
+	"icon": "assets/codex-color.svg",
+	"description": "Indexes local Codex session JSONL logs as searchable markdown documents.",
 	"author": {
 		"name": "Gety"
 	},
 	"schedule": {
-		"interval": 3600
+		"interval": 600
+	},
+	"config": {
+		"fields": [
+			{
+				"id": "include_tool_calls",
+				"title": "Include tool calls",
+				"type": "checkbox",
+				"description": "Include brief tool call summaries. Tool outputs are never indexed.",
+				"default_value": false
+			},
+			{
+				"id": "include_archived_sessions",
+				"title": "Include archived sessions",
+				"type": "checkbox",
+				"description": "Also index JSONL files under the local archived_sessions directory.",
+				"default_value": true
+			}
+		]
 	},
 	"doc_link": {
 		"kind": "url",

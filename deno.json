@@ -7,7 +7,7 @@
 	"tasks": {
 		"build": "deno run -A scripts/build.ts",
 		"dev": "deno run -A scripts/build.ts --watch",
-		"check": "deno task generate && deno check src/index.ts scripts/build.ts scripts/setup.ts scripts/generate-manifest-config.ts dev/gety-connector-sdk/mod.ts dev/runner.ts src/gen/manifest.d.ts",
+		"check": "deno task generate && deno check src/index.ts src/codex_log.ts scripts/build.ts scripts/setup.ts scripts/generate-manifest-config.ts dev/gety-connector-sdk/mod.ts dev/runner.ts src/gen/manifest.d.ts",
 		"generate": "deno run -A scripts/generate-manifest-config.ts",
 		"setup": "deno run -A scripts/setup.ts",
 		"test": "deno test src",
