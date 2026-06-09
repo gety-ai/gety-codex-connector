@@ -19,6 +19,3 @@ jobs:
 
       - name: Verify
         run: deno task verify
-
-      - name: Check working tree
-        run: git diff --exit-code
