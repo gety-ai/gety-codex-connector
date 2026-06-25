@@ -2,7 +2,8 @@
 	"id": "codex_sessions",
 	"name": "Codex",
 	"version": "0.1.0",
-	"min_app_version": "0.5.1",
+	"min_gety_app_version": "0.5.1",
+	"capabilities": ["data-source"],
 	"entry": "dist/main.js",
 	"icon": "assets/codex-color.svg",
 	"description": "Indexes local Codex session JSONL logs as searchable markdown documents.",
@@ -10,7 +11,8 @@
 		"name": "Gety"
 	},
 	"schedule": {
-		"interval": 600
+		"strategy": "interval",
+		"interval_seconds": 600
 	},
 	"config": {
 		"fields": [
