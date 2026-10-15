@@ -1,7 +1,7 @@
 {
 	"id": "codex_sessions",
 	"name": "Codex",
-	"version": "0.1.0",
+	"version": "0.2.0-beta.1",
 	"min_gety_app_version": "0.5.1",
 	"capabilities": ["data-source"],
 	"entry": "dist/main.js",
